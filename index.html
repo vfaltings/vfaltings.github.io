@@ -9,54 +9,56 @@
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@300;400;700;800&family=Playfair+Display:wght@400;700&family=Roboto+Mono:wght@100;300;400&display=swap" rel="stylesheet">
     <link href="./dist/output.css" rel="stylesheet">
 </head>
-<body>
-    <header class="w-full bg-gradient-to-br from-blue-900 to-slate-800 text-white shadow-xl">
+<body id="home">
+    <header class="w-full text-white shadow-xl bg-cover bg-right-top bg-blue-900/90">
         <nav>
-            <ul class="flex flex-row justify-end">
-                <li class="nav-item"><a href="#">Experience</a></li>
-                <li class="nav-item"><a href="#">Education</a></li>
-                <li class="nav-item"><a href="#">Skills</a></li>
-                <li class="nav-item"><a href="#">Portfolio</a></li>
-                <li class="nav-item bg-neutral-50 text-slate-800 hover:text-blue-900"><a href="#">Home</a></li>
+            <ul class="flex justify-between">
+                <li class="nav-item bg-neutral-50 text-slate-800 hover:text-blue-900"><a href="#home">Home</a></li>
+                <div class="flex flex-row justify-end">
+                    <li class="nav-item"><a href="#experience">Experience</a></li>
+                    <li class="nav-item"><a href="#education">Education</a></li>
+                    <li class="nav-item"><a href="#">Skills</a></li>
+                    <li class="nav-item"><a href="#">Portfolio</a></li>
+                </div>
             </ul>
         </nav>
     </header>
     <div class="bg-fixed bg-cover" style="background-image: url('./img/59350319341cd.jpg')">
         <h1 class="pt-12 pl-24">Victor Faltings</h1>
-        <p class="ml-20 p-3 mt-4 w-[50%] backdrop-sepia bg-orange-200/5 rounded-2xl text-justify shadow-xl">Computer Science Master’s student interested in systems, software engineering, computer architecture and cybersecurity. Experienced coder with knowledge of modern development practices.</p>
+        <p class="ml-20 p-3 mt-4 w-[50%] backdrop-blur-sm backdrop-grayscale bg-green-300/40 rounded-2xl text-justify shadow-xl">Computer Science Master’s student interested in systems, software engineering, computer architecture and cybersecurity. Experienced coder with knowledge of modern development practices.</p>
         <div class="bg-neutral-50 mt-10 shadow-xl p-5">
             <section>
-                <h2>Experience</h2>
+                <h2 id="experience">Experience</h2>
                 <div class="m-2">
-                    <h3>Swiss Federal Institute of Technology Lausann (EPFL), Lausanne - CS-210 Teaching Assistant</h3>
+                    <a href="https://edu.epfl.ch/coursebook/en/functional-programming-CS-210" target="_blank"><h3>Swiss Federal Institute of Technology Lausanne (EPFL), Lausanne - CS-210 Teaching Assistant</h3></a>
                     <h4>September 2022 - January 2023</h4>
                     <p>Teaching assistant for introductory functional programming course (Scala).</p>
                     <p>Assisted students on weekly exercise and project sessions and graded student projects.</p>
                 </div>
                 <div class="m-2">
-                    <h3>Swiss Federal Institute of Technology Lausanne (EPFL), Lausanne - CS-107 Teaching Assistant</h3>
+                    <a href="https://edu.epfl.ch/coursebook/en/introduction-to-programming-CS-107" target="_blank"><h3>Swiss Federal Institute of Technology Lausanne (EPFL), Lausanne - CS-107 Teaching Assistant</h3></a>
                     <h4>September 2021 - January 2022</h4>
                     <p>Teaching assistant for introductory programming course (Java).</p>
                     <p>Assisted students on weekly exercise and project sessions and graded student projects.</p>
                 </div>
             </section>
             <section>
-                <h2>Education</h2>
+                <h2 id="education">Education</h2>
                 <div class="m-2 grid grid-cols-3 gap-10">
                     <div class="col-span-2">
-                        <h3>Swiss Federal Institute of Technology Lausanne (EPFL), Lausanne - Computer Science</h3>
+                        <a href="https://www.epfl.ch/en/" target="_blank"><h3>Swiss Federal Institute of Technology Lausanne (EPFL), Lausanne - Computer Science</h3></a>
                         <h4>September 2019 - Present</h4>
                         <p>Bachelor of Science in Computer Science (5.27/6.0 GPA) - July 2022.</p>
                         <p>Master of Science in Computer Science - Expected Summer 2024.</p>
                     </div>
-                    <img src="/img/EPFL.png" alt="EPFL logo" class="object-contain justify-self-center self-center w-[60%]">
+                    <a href="https://www.epfl.ch/en/" target="_blank" class="justify-self-center self-center flex justify-center"><img src="/img/EPFL.png" alt="EPFL logo" class="object-contain max-w-[60%]"></a>
                     <div class="col-span-2">
-                        <h3>University of Lausanne (UNIL), Lausanne — Medicine</h3>
+                        <a href="https://www.unil.ch/index.html" target="_blank"><h3>University of Lausanne (UNIL), Lausanne — Medicine</h3></a>
                         <h4>September 2017 - February 2019</h4>
                     </div>
-                    <img src="/img/LogoUNIL-244d4ccc.png" alt="UNIL logo" class="object-contain justify-self-center self-center w-[70%]">
+                    <a href="https://www.unil.ch/index.html" target="_blank" class="justify-self-center self-center flex justify-center"><img src="/img/LogoUNIL-244d4ccc.png" alt="UNIL logo" class="object-contain max-w-[70%]"></a>
                     <div class="col-span-2">
-                        <h3>Gymnase de Renens, Lausanne — Maturité Bilingue</h3>
+                        <a href="https://www.gyre.ch/" target="_blank"><h3>Gymnase de Renens, Lausanne — Maturité Bilingue</h3></a>
                         <h4>September 2016 - July 2017</h4>
                         <p>Focus: Biologie-Chemistry</p>
                         <p>Bilingual High School degree with a 1 year exchange to Adelaide, South Australia.</p>
@@ -64,6 +66,115 @@
                 </div>
             </section>
         </div>
+    </div>
+    <div class="bg-fixed bg-cover bg-center w-full pt-40" style="background-image: url('./img/5fe661305d6f17.70760832.jpg')">
+        <div class="bg-neutral-50 shadow-xl p-5">
+            <h2>Projects</h2>
+            <div class="m-2">
+                <h3>ARM-Cachepaths - part of ARM-cachefuzz</h3>
+                <h4>September 2021 - January 2022</h4>
+                <p>Bachelor semester project. Assisted on the development of a feedback-driven fuzzer (automated vulnerability testing) for ARM smartphones. Cache timing attacks were used as an information side channel to generate feedback for the fuzzer.</p>
+            </div>
+            <div class="m-2">
+                <h3>SwiftWallet — Android cryptocurrency wallet app</h3>
+                <h4>February 2022 - June 2022</h4>
+                <p>Cryptocurrency wallet app written in Java for Android. Allows users to manage multiple cryptocurrency wallets and check up on market exchange prices. Developed as a group project with agile development and TDD. Experience as both team lead and developer.</p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-fixed bg-cover w-full p-20" style="background-image: url('./img/010101.png')">
+        <div class="bg-neutral-50 shadow-xl p-5 rounded-xl">
+            <h2>Skills</h2>
+            <div class="m-2">
+                <h3>Soft skills</h3>
+                <ul class="list-disc list-inside">
+                    <li>Able to work in teams or individually.</li>
+                    <li>Agile development, Test-driven development, Continuous integration/ Continuous delivery</li>
+                    <li>Fast and independent learner</li>
+                </ul>
+            </div>
+            <div class="m-2">
+                <h3>Programming skills</h3>
+                <ul class="list-disc list-inside">
+                    <li>Proficient in Java, Scala, C/C++, Python, VHDL, Assembly, MySQL, Git</li>
+                    <li>Familiar with Rust, Spark, Kotlin, CSS, HTML5, Javascript, Docker, Bash</li>
+                    <li>Knowledge of object-oriented and functional paradigms.</li>
+                    <li>Data structures and algorithms</li>
+                    <li>Daily user of MacOS, Linux and Windows</li>
+                </ul>
+            </div>
+            <h2>International</h2>
+            <div class="m-2">
+                <p>Native English and French speaker and high school level German speaker.</p>
+                <p>American, Swiss and German nationalities</p>
+            </div>
+            <br>
+            <h2>Portfolio</h2>
+            <div class="m-2 grid grid-cols-2 gap-2">
+                <div>
+                    <h3>QR code generator — Java</h3>
+                    <h4>Fall 2019</h4>
+                    <p>Simple program that can generate QR codes.</p>
+                </div>
+                <div>
+                    <h3>RPG game — Java</h3>
+                    <h4>Fall 2019</h4>
+                    <p>2D Action RPG game written in Java.</p>
+                </div>
+                <div>
+                    <h3>Night sky planetarium program — Java</h3>
+                    <h4>Spring 2020</h4>
+                    <p>Application that can simulate and display stars and other astronomical information. Use of JavaFX as a graphics library.</p>
+                </div>
+                <div>
+                    <h3>Coffee machine circuit — VHDL</h3>
+                    <h4>Spring 2020</h4>
+                    <p>VHDL circuit that handles the logic of a coffee vending machine.</p>
+                </div>
+                <div>
+                    <h3>Conway’s Game of Life — Assembly</h3>
+                    <h4>Fall 2020</h4>
+                    <p>Implementation of Conway’s Game of Life written in MIPS Assembly to run on an FPGA.</p>
+                </div>
+                <div>
+                    <h3>Image database — C</h3>
+                    <h4>Spring 2021</h4>
+                    <p>Image storing database, inspired by Facebook’s “Needle in a haystack” approach.</p>
+                </div>
+                <div>
+                    <h3>Nios2 processor design — VHDL/Assembly</h3>
+                    <h4>Spring - Fall 2021</h4>
+                    <p>Created and coded a basic and pipelined design of a multicycle Nios2 processor using VHDL and Assembly to run on an FPGA.</p>
+                </div>
+                <div>
+                    <h3>Cellulo robot game — Unity/C#</h3>
+                    <h4>Spring 2022</h4>
+                    <p>Simple games in Unity that could be run either in the browser or by using simple robots via bluetooth.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-neutral-50">
+        <div class="p-5">
+            <h2>Contact</h2>
+            <div class="m-2 grid grid-cols-2">
+                <div>
+                    <h3>Victor Faltings</h3>
+                    <p>Ave. de Croix de Rive 20</p>
+                    <p>1028, Préverenges</p>
+                    <p>Vaud, Switzerland</p>
+                </div>
+                <div>
+                    <h3>Phone</h3>
+                    <p>+41 78 826 29 21</p>
+                    <h3>Email</h3>
+                    <a href="mailto:victor.faltings@gmail.com">victor.faltings@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-neutral-100 p-2 flex justify-center">
+        <a href="https://github.com/vfaltings" target="_blank" class="w-10 h-10"><img src="./img/github-icon.png" class="object-contain"></a>
     </div>
 </body>
 </html>

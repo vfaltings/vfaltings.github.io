@@ -5,13 +5,18 @@
 @layer components {
     .nav-item {
         @apply p-4 uppercase font-roboto-mono font-light text-neutral-50
-        transition-all duration-300
+        transition-all duration-100
         hover:text-orange-200
     }
 }
 
+a[href^=mailto], a h3 {
+    @apply hover:text-orange-200 hover:bg-slate-800 w-fit hover:pl-2 hover:pr-2
+    transition-all duration-100
+}
 * {
     @apply font-open-sans font-light text-slate-800
+    scroll-smooth
 }
 
 h1 {
@@ -20,6 +25,8 @@ h1 {
 
 h2 {
     @apply text-3xl font-roboto-mono bg-orange-200 w-fit p-2 pl-5 pr-12
+    hover:pl-12
+    transition-all duration-100
 }
 
 h3 {
