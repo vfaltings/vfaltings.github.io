@@ -8,7 +8,10 @@ module.exports = {
         'matterhorn' : "url('/img/matterhorn.jpg')"
       },
       fontFamily : {
-        'robotoSlab' : ['"Roboto Slab"', 'serif']
+        'open-sans' : ["'Open Sans'", 'sans-serif'],
+        'playfair' : ["'Playfair Display'", 'serif'],
+        'roboto-mono' : ["'Roboto Mono'", 'monospace'],
+        'abril' : ["'Abril Fatface'", 'cursive']
       }
     },
   },

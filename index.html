@@ -5,27 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Victor Faltings</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
-    <link href="dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@300;400;700;800&family=Playfair+Display:wght@400;700&family=Roboto+Mono:wght@100;300;400&display=swap" rel="stylesheet">
+    <link href="./dist/output.css" rel="stylesheet">
 </head>
-<body class="font-sans bg-gradient-to-r from-orange-300 to-orange-200">
-    <img src="./img/teal-halftone.jpg" class="absolute top-0 left-0 -z-10 object-cover h-full w-full opacity-30">
-    <header class="w-full bg-gradient-to-br from-blue-900 to-slate-800 text-white">
+<body>
+    <header class="w-full bg-gradient-to-br from-blue-900 to-slate-800 text-white shadow-xl">
         <nav>
             <ul class="flex flex-row justify-end">
                 <li class="nav-item"><a href="#">Experience</a></li>
                 <li class="nav-item"><a href="#">Education</a></li>
                 <li class="nav-item"><a href="#">Skills</a></li>
                 <li class="nav-item"><a href="#">Portfolio</a></li>
-                <li class="nav-item bg-neutral-200 text-black hover:text-blue-900"><a href="#">Home</a></li>
+                <li class="nav-item bg-neutral-50 text-slate-800 hover:text-blue-900"><a href="#">Home</a></li>
             </ul>
         </nav>
     </header>
-    <div id="home" class="h-72">
-        <img src="./img/matterhorn.jpg" class="h-full w-full object-cover object-top">
-        <div class="relative -top-64">
-            <h1 class="pl-28 text-6xl font-serif font-thin text-black">Victor Faltings</h1>
-            <p class="pl-16 pt-5 w-[50rem] text-slate-800">Computer Science Master’s student interested in systems, software engineering, computer architecture and cybersecurity. Experienced coder with knowledge of modern development practices.</p>
+    <div class="bg-fixed bg-cover" style="background-image: url('./img/59350319341cd.jpg')">
+        <h1 class="pt-12 pl-24">Victor Faltings</h1>
+        <p class="ml-20 p-3 mt-4 w-[50%] backdrop-sepia bg-orange-200/5 rounded-2xl text-justify shadow-xl">Computer Science Master’s student interested in systems, software engineering, computer architecture and cybersecurity. Experienced coder with knowledge of modern development practices.</p>
+        <div class="bg-neutral-50 mt-10 shadow-xl p-5">
+            <section>
+                <h2>Experience</h2>
+                <div class="m-2">
+                    <h3>Swiss Federal Institute of Technology Lausann (EPFL), Lausanne - CS-210 Teaching Assistant</h3>
+                    <h4>September 2022 - January 2023</h4>
+                    <p>Teaching assistant for introductory functional programming course (Scala).</p>
+                    <p>Assisted students on weekly exercise and project sessions and graded student projects.</p>
+                </div>
+                <div class="m-2">
+                    <h3>Swiss Federal Institute of Technology Lausanne (EPFL), Lausanne - CS-107 Teaching Assistant</h3>
+                    <h4>September 2021 - January 2022</h4>
+                    <p>Teaching assistant for introductory programming course (Java).</p>
+                    <p>Assisted students on weekly exercise and project sessions and graded student projects.</p>
+                </div>
+            </section>
+            <section>
+                <h2>Education</h2>
+                <div class="m-2 grid grid-cols-3 gap-10">
+                    <div class="col-span-2">
+                        <h3>Swiss Federal Institute of Technology Lausanne (EPFL), Lausanne - Computer Science</h3>
+                        <h4>September 2019 - Present</h4>
+                        <p>Bachelor of Science in Computer Science (5.27/6.0 GPA) - July 2022.</p>
+                        <p>Master of Science in Computer Science - Expected Summer 2024.</p>
+                    </div>
+                    <img src="/img/EPFL.png" alt="EPFL logo" class="object-contain justify-self-center self-center w-[60%]">
+                    <div class="col-span-2">
+                        <h3>University of Lausanne (UNIL), Lausanne — Medicine</h3>
+                        <h4>September 2017 - February 2019</h4>
+                    </div>
+                    <img src="/img/LogoUNIL-244d4ccc.png" alt="UNIL logo" class="object-contain justify-self-center self-center w-[70%]">
+                    <div class="col-span-2">
+                        <h3>Gymnase de Renens, Lausanne — Maturité Bilingue</h3>
+                        <h4>September 2016 - July 2017</h4>
+                        <p>Focus: Biologie-Chemistry</p>
+                        <p>Bilingual High School degree with a 1 year exchange to Adelaide, South Australia.</p>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 </body>
